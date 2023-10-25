@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div id="bd">
+
+    <div id="mdl">
+        <div id=mdl-c>
+            <div id="close-btn">
+                <button id="close">X</button>
+            </div>
+            <br>
+            <div> 
+                <h3 class="hdr">Answer</h3>
+            </div>
+
+            <div id="value">
+                <h3 class="ans"></h3>
+            </div>
+
+            <div>
+                <img src="../img/rozen.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="input">
+        <div class="cont">
+            <h1 id="tle">Shape Calculator</h1>
+            <label for="shape">Select a shape:</label>
+            <select id="shape" required>
+                <option value="Choose" hidden></option>
+                <option value="circle">Circle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+            </select><br><br>
+
+            <div id="circInput">
+                <label for="diameter">Diameter:</label>
+                <input type="number" value="diameter" id="diameter" placeholder="Please enter a number" required><br>
+            </div>
+
+            <div id="rectInput">
+                <label for="width">Width:</label>
+                <input type="number" value="width" id="width" placeholder="Please enter a number" required><br>
+                <label for="length">Length:</label>
+                <input type="number" value="length" id="length" placeholder="Please enter a number" required><br>
+            </div>
+
+            <div id="squaInput">
+                <label for="side">Side Length:</label>
+                <input type="number" value="side" id="side" placeholder="Please enter a number" required><br>
+            </div>
+
+                <button onclick="calculate()" id="solve">Calculate</button><br><br>
+
+            <div id="result" hidden></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/main.js"></script>
+</html>
